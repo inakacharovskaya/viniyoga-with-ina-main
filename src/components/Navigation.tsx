@@ -23,7 +23,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 min-w-0">
             <img src={yoginaLogo} alt={`${t.brandName} logo`} className="h-10 w-auto flex-shrink-0" />
-            <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.3em] leading-tight">
+            <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.15em] leading-tight">
               {(() => {
                 const parts = t.brandName.split(" ");
                 const first = parts[0];

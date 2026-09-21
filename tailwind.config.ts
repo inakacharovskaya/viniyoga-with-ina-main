@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'display': ['"Yeseva One"', 'serif'],
-        'body': ['"Noto Sans Devanagari Variable"', 'sans-serif'],
+        'body': ['"Montserrat"', 'sans-serif'],
         'caption': ['"Yeseva One"', 'serif'],
       },
       colors: {
