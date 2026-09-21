@@ -124,9 +124,17 @@ All colors MUST be HSL.
     font-family: "Montserrat", sans-serif;
   }
   
+  nav, footer {
+    font-family: "Montserrat", sans-serif;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "Yeseva One", serif;
     letter-spacing: 0.15em;
+  }
+
+  h1 {
+    text-transform: uppercase;
   }
 
   .font-caption {
