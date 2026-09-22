@@ -25,7 +25,7 @@ export const Hero = () => {
           />
         </div>
         <div className="px-6 pt-6 pb-12 text-white text-right" style={{ backgroundColor: 'hsl(25 25% 28%)' }}>
-          <h1 className="text-4xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl font-bold mb-4 leading-tight uppercase">
             {t.hero.title1}<br />{t.hero.title2}
           </h1>
           <p className="text-lg mb-8 opacity-95 leading-relaxed">
@@ -69,7 +69,7 @@ export const Hero = () => {
 
         <div className="absolute inset-0 container px-4 mx-auto flex items-center justify-end">
           <div className="w-2/5 text-primary-foreground text-right">
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight uppercase">
               {t.hero.title1}<br />{t.hero.title2}
             </h1>
             <p className="text-xl lg:text-2xl mb-8 opacity-95 leading-relaxed">

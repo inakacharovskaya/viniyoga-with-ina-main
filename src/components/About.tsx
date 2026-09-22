@@ -34,7 +34,7 @@ export const About = () => {
       <section className="py-16 bg-background">
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase">
               {t.about.meet}
             </h2>
             <div className="prose prose-lg max-w-none mx-auto text-foreground/90 space-y-8 text-center">
@@ -61,7 +61,7 @@ export const About = () => {
             className="w-full aspect-square object-cover"
           />
           <div className="text-foreground/90 space-y-4 px-4 py-8 md:px-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 uppercase">
                 {t.about.practiceTitle}
               </h3>
               <p className="text-xl leading-relaxed">
@@ -81,7 +81,7 @@ export const About = () => {
       <section className="py-16 bg-background">
         <div className="grid md:grid-cols-2 items-center">
           <div className="text-foreground/90 space-y-4 px-4 py-8 md:px-12 md:order-1 order-2">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 uppercase">
                 {t.about.rewireTitle}
               </h3>
               <p className="text-xl leading-relaxed">
@@ -107,7 +107,7 @@ export const About = () => {
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-foreground/90 space-y-8">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8 uppercase">
               {t.about.certs}
             </h3>
             <div className="flex flex-wrap items-center justify-center gap-8">
@@ -127,7 +127,7 @@ export const About = () => {
                ))}
              </div>
               <div className="mt-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8 uppercase">
                   {t.about.accreditedBy}
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8">

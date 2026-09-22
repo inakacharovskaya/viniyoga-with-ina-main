@@ -31,7 +31,7 @@ export const Contact = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase">
               {t.contact.heading}
             </h2>
             <p className="text-xl opacity-90">
@@ -86,7 +86,7 @@ export const Contact = () => {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-6">{t.contact.getInTouch}</h3>
+                <h3 className="text-2xl font-bold mb-6 uppercase">{t.contact.getInTouch}</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <MapPin className="h-6 w-6 mt-1 flex-shrink-0" />
