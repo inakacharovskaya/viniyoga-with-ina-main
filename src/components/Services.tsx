@@ -146,26 +146,24 @@ export const Services = () => {
           </Card>
         </div>
 
-        <div className="max-w-4xl mx-auto mt-12 space-y-8 text-foreground/90">
-          <div>
-            <p className="text-lg leading-relaxed whitespace-pre-line text-center">
-              {t.about.chooseBody}
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <h4 className="text-xl md:text-2xl font-bold text-foreground text-center">
-              {t.about.guideHeader}
-            </h4>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-secondary/10 border-l-4 border-secondary p-6 rounded-r-lg">
+        <div className="max-w-5xl mx-auto mt-12 space-y-6">
+          <h4 className="text-xl md:text-2xl font-bold text-foreground text-center">
+            {t.about.guideHeader}
+          </h4>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-secondary/10 border-2 border-secondary/50 rounded-xl overflow-hidden shadow-sm">
+              <div className="h-1.5 bg-secondary" />
+              <div className="p-6">
                 <p className="text-base leading-relaxed text-foreground/90">
                   {t.about.guideYogaPrefix}
                   <strong className="text-foreground font-bold">{t.about.guideYogaBold}</strong>
                   {t.about.guideYogaSuffix}
                 </p>
               </div>
-              <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-lg">
+            </div>
+            <div className="bg-primary/10 border-2 border-primary/50 rounded-xl overflow-hidden shadow-sm">
+              <div className="h-1.5 bg-primary" />
+              <div className="p-6">
                 <p className="text-base leading-relaxed text-foreground/90">
                   {t.about.guideMeditationPrefix}
                   <strong className="text-foreground font-bold">{t.about.guideMeditationBold}</strong>
@@ -183,6 +181,12 @@ export const Services = () => {
           <h4 className="text-xl md:text-2xl font-bold text-foreground whitespace-pre-line mt-2 max-w-3xl mx-auto uppercase">
             {t.services.footnoteRest}
           </h4>
+        </div>
+
+        <div className="max-w-4xl mx-auto mt-12 text-foreground/90">
+          <p className="text-lg leading-relaxed whitespace-pre-line text-center">
+            {t.about.chooseBody}
+          </p>
         </div>
       </div>
     </section>

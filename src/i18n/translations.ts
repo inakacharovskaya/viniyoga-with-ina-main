@@ -117,7 +117,7 @@ export const translations: Record<Lang, Dict> = {
       reviews: "• 15 Reviews",
     },
     contact: {
-      heading: "Start Your Wellness Journey",
+      heading: "Start Your\nWellness Journey",
       subheading:
         "Get in touch for service inquiries, bookings, or collaborative projects.",
       namePh: "Your Name",
@@ -172,7 +172,7 @@ export const translations: Record<Lang, Dict> = {
     index: {
       sectionTitle: "Entdecke deinen Weg",
       sectionSubtitle:
-        "Erfahre, wie Yogatherapie und Meditation dein Leben verändern können",
+        "Finde heraus, wie Yogatherapie und Meditation dein Leben verändern können",
       servicesTitle: "Angebot",
       servicesDesc:
         "Entdecke die Programme Meditation Mastery und Yogatherapie, abgestimmt auf deine Bedürfnisse.",
@@ -271,7 +271,7 @@ export const translations: Record<Lang, Dict> = {
       reviews: "• 15 Rezensionen",
     },
     contact: {
-      heading: "Beginne deine Wellness-Reise",
+      heading: "Beginne deine\nWellness-Reise",
       subheading:
         "Melde dich für Anfragen, Buchungen oder gemeinsame Projekte.",
       namePh: "Dein Name",

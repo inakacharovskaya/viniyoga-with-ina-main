@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { siteImages } from "@/lib/assets";
 
-const heroImage = "/images/ina-hero.jpg";
+const heroImage = siteImages.hero.main;
 const BOOKING_URL = "https://calendar.app.google/Ng7vmb3euhFMuxcc9";
 
 export const Hero = () => {
@@ -54,11 +55,11 @@ export const Hero = () => {
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden md:block relative w-full" style={{ minHeight: '700px' }}>
+      <div className="hidden md:block relative w-full overflow-hidden" style={{ minHeight: '700px' }}>
         <img
           src={heroImage}
           alt={t.hero.imgAlt}
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="absolute inset-0 w-[110%] h-full object-cover object-top -left-[10%]"
         />
         <div
           className="absolute inset-0"

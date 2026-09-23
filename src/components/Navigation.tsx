@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { siteImages } from "@/lib/assets";
 
-const yoginaLogo = "/images/yogina-logo.png";
+const brandLogo = siteImages.brand.logo;
+const navLinkClassName = "text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.1em] text-sm font-semibold";
+const bookButtonClassName = "uppercase tracking-[0.1em]";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +25,8 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 min-w-0">
-            <img src={yoginaLogo} alt={`${t.brandName} logo`} className="h-10 w-auto flex-shrink-0" />
-            <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.15em] leading-tight">
+            <img src={brandLogo} alt={`${t.brandName} logo`} className="h-10 w-auto flex-shrink-0" />
+            <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.22em] leading-tight">
               {(() => {
                 const parts = t.brandName.split(" ");
                 const first = parts[0];
@@ -32,7 +35,7 @@ export const Navigation = () => {
                   <>
                     {first}
                     <wbr />
-                    <span className="ml-3 whitespace-nowrap">{rest}</span>
+                    <span className="ml-4 whitespace-nowrap tracking-[0.22em]">{rest}</span>
                   </>
                 );
               })()}
@@ -45,12 +48,12 @@ export const Navigation = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.1em] text-sm font-semibold"
+                className={navLinkClassName}
               >
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="uppercase tracking-[0.1em]">
+            <Button asChild className={bookButtonClassName}>
               <a href="https://calendar.app.google/9Q6kuJZFaaNDzJZ98" target="_blank" rel="noopener noreferrer">
                 {t.nav.bookNow}
               </a>
@@ -75,7 +78,7 @@ export const Navigation = () => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.1em] text-sm font-semibold"
+                  className={navLinkClassName}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

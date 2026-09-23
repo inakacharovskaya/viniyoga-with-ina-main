@@ -5,8 +5,10 @@ import { Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { siteImages } from "@/lib/assets";
 
-const yoginaLogo = "/images/yogina-logo.png";
+const brandLogo = siteImages.brand.logo;
+const fieldClassName = "bg-white/10 border-white/20 text-white placeholder:text-white/90";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -31,7 +33,7 @@ export const Contact = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase whitespace-pre-line">
               {t.contact.heading}
             </h2>
             <p className="text-xl opacity-90">
@@ -48,7 +50,7 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/90"
+                    className={fieldClassName}
                   />
                 </div>
                 <div>
@@ -58,7 +60,7 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/90"
+                    className={fieldClassName}
                   />
                 </div>
                 <div>
@@ -68,7 +70,7 @@ export const Contact = () => {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
                     rows={5}
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/90"
+                    className={fieldClassName}
                   />
                 </div>
                 <Button
@@ -80,7 +82,7 @@ export const Contact = () => {
                 </Button>
               </form>
               <div className="flex justify-center mt-6">
-                <img src={yoginaLogo} alt={`${t.brandName} logo`} className="h-60 w-auto opacity-80" />
+                <img src={brandLogo} alt={`${t.brandName} logo`} className="h-60 w-auto opacity-80" />
               </div>
             </div>
 

@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { LanguageProvider } from "./i18n/LanguageContext";
 import { LanguageToggle } from "./components/LanguageToggle";
+import { CookieConsentBanner } from "./components/CookieConsentBanner";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
           <LanguageToggle />
+          <CookieConsentBanner />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>

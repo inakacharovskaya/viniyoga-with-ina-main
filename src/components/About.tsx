@@ -1,14 +1,15 @@
-const inaNamaste = "/images/panorama-face-smooth.jpg";
-const inaHeadstand = "/images/ina-headstand.jpg";
-const inaSeatedTwist = "/images/ina-seated-twist.jpg";
-const eRyt500 = "/images/e-ryt500-yoga-alliance.png";
-const yacep = "/images/yacep-yoga-alliance.png";
-const iayt = "/images/iayt-accredited.png";
-const yogaTherapyGreece = "/images/yoga-therapy-greece-transparent.png";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { siteImages } from "@/lib/assets";
 
-const rys200 = "/images/rys-200.webp";
-const rys300 = "/images/rys-300.webp";
+const inaNamaste = siteImages.about.namaste;
+const inaHeadstand = siteImages.about.headstand;
+const inaSeatedTwist = siteImages.about.seatedTwist;
+const eRyt500 = siteImages.about.certifications.eRyt500;
+const yacep = siteImages.about.certifications.yacep;
+const iayt = siteImages.about.certifications.iayt;
+const yogaTherapyGreece = siteImages.about.certifications.yogaTherapyGreece;
+const rys200 = siteImages.about.certifications.rys200;
+const rys300 = siteImages.about.certifications.rys300;
 
 export const About = () => {
   const { t } = useLanguage();
