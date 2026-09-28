@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { ChevronDown, ChevronUp, Star } from "lucide-react";
+import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const testimonials = [
@@ -25,6 +26,20 @@ const testimonials = [
 
 export const Testimonials = () => {
   const { t } = useLanguage();
+  const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
+
+  const toggleReview = (index: number) => {
+    setExpandedReviews((current) => {
+      const next = new Set(current);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
   return (
     <section className="py-16 bg-background">
       <div className="container px-4 mx-auto">
@@ -54,9 +69,30 @@ export const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed text-base">
+                <p className={`text-muted-foreground leading-relaxed text-base ${
+                  expandedReviews.has(index) ? "" : "line-clamp-4"
+                }`}>
                   "{testimonial.text}"
                 </p>
+                <button
+                  type="button"
+                  onClick={() => toggleReview(index)}
+                  aria-expanded={expandedReviews.has(index)}
+                  aria-label={`${expandedReviews.has(index) ? "Collapse" : "Expand"} ${testimonial.name}'s review`}
+                  className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+                >
+                  {expandedReviews.has(index) ? (
+                    <>
+                      <ChevronUp className="h-4 w-4" aria-hidden="true" />
+                      Collapse
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="h-4 w-4" aria-hidden="true" />
+                      Read more
+                    </>
+                  )}
+                </button>
               </CardContent>
             </Card>
           ))}

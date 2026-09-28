@@ -152,14 +152,6 @@ export const About = () => {
               </div>
           </div>
 
-          <div className="text-center mt-16">
-            <p className="text-2xl leading-relaxed font-bold text-foreground">
-              {t.about.closing1}
-            </p>
-            <p className="text-2xl leading-relaxed font-bold text-foreground mt-2">
-              {t.about.closing2}
-            </p>
-          </div>
         </div>
       </div>
     </section>

@@ -73,7 +73,7 @@ export const Services = () => {
 
               <div className="pt-4 border-t">
                 <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-primary">€97</span>
+                  <span className="text-4xl font-bold text-primary">€65</span>
                   <span className="text-muted-foreground">{t.services.perHour}</span>
                   <span className="ml-auto text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
                     {t.services.firstFree}
@@ -127,7 +127,7 @@ export const Services = () => {
 
               <div className="pt-4 border-t">
                 <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-secondary">€55</span>
+                  <span className="text-4xl font-bold text-secondary">€45</span>
                   <span className="text-muted-foreground">{t.services.perHour}</span>
                   <span className="ml-auto text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
                     {t.services.firstFree}

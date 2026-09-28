@@ -64,23 +64,23 @@ export const translations: Record<Lang, Dict> = {
     about: {
       meet: "Meet Ina",
       meet1:
-        "My path to becoming a yoga therapist was forged in my own pursuit of balance. My journey began when perfectionism and people-pleasing became a heavy, driving force in my life, fueled by a demanding career and complex family issues. This often left me feeling confused, powerless, and utterly burnt out. These struggles manifested as anxiety and depressive episodes, coupled with years of substance use, alongside physical symptoms like asthma, insomnia, and an immune deficiency.",
+        "My path to becoming a yoga therapist was inspired by my own pursuit of balance. Unhealthy patterns of perfectionism and people-pleasing once left me exhausted, anxious, and deeply burnt out. Coping with this pressure through eating disorders and substance use eventually took a severe toll on both my mental and physical health, contributing to an autoimmune condition.\n\nMy healing journey began when I discovered yoga in 2018. After completing my first teacher training in 2020, daily practice became my anchor, bringing clear direction and steady healing. Year by year, shedding old subconscious burdens has allowed me to meet life with greater vitality, clarity, and peace.",
       meet2:
         "Everything started changing when I discovered yoga in 2018. After my first Teacher Training in 2020, consistent self-practice brought profound clarity. Every year it feels like I am shedding a layer of heavy subconscious burden, making it easier and more enjoyable to manage life's challenges.",
       practiceTitle: "From Practice to Professional Purpose",
       practice1:
-        "While teaching, I quickly saw that generic classes failed to address my students' unique and complex symptoms. I became determined to help each person find the exact personalised adjustments they needed.",
+        "My early years of teaching Vinyasa flows made me notice that generic classes failed to address my students' unique and often complex needs. I became determined to learn how to offer variations and adjustments to make my classes more inclusive and accessible.",
       practice2:
-        "This mission led me to specialise in Yoga Therapy, the art of using the practice to precisely target symptoms. Realising that most issues stem from the psyche and that mindset is a major health contributor, I simultaneously pursued a Master's in Neuroscience.",
+        "This mission led me to specialise in Yoga Therapy, the art of personalising the practice. Realising that most issues stem from the psyche and that mindset is a major health contributor, I simultaneously pursued a Master's in Neuroscience.",
       practice3:
         "This dual expertise allows me to offer an approach that is both holistic and scientifically validated. I applied this by successfully reducing Anxiety in student groups and working privately with clients navigating respiratory and autoimmune disorders.",
-      rewireTitle: "Rewiring your Resilience",
+      rewireTitle: "REWIRING YOUR RESILIENCE",
       rewire1:
         "Today, my art is rooted in this simple goal: to dismantle the powerlessness that comes with a diagnosis or chronic stress and transfer that self-control and power to you.",
       rewire2:
         "I specialise in serving curious, high-achieving individuals who feel exhausted, burnt out, or defeated by a diagnosis.",
       rewire3:
-        "My approach is designed to build neuroplasticity - the brain's ability to change and shift your entire perspective. By using personalised, mindful movement and breath sequences, we consciously build a routine that feels grounding, safe, and right for your unique body.",
+        "My approach is designed to build your brain's ability to change and shift your entire perspective. By using personalised, mindful movement and breath sequences, we consciously build a routine that feels grounding, safe, and right for your unique body.",
       processHeader: "This process is deeply educational and empowering:",
       processItem1Bold: "The Foundation:",
       processItem1:
@@ -105,8 +105,6 @@ export const translations: Record<Lang, Dict> = {
       guideMeditationBold: "Meditation Mastery",
       guideMeditationSuffix:
         " if you feel ready to sharpen your focus, deepen your self-awareness, and feel more connected and present in your life.",
-      closing1: "Your mindset is everything.",
-      closing2: "Are you ready to discover the profound power you hold over your health?",
       certs: "My Certifications",
       accreditedBy: "Certified by",
     },
@@ -173,9 +171,9 @@ export const translations: Record<Lang, Dict> = {
       sectionTitle: "Entdecke deinen Weg",
       sectionSubtitle:
         "Finde heraus, wie Yogatherapie und Meditation dein Leben verändern können",
-      servicesTitle: "Angebot",
+      servicesTitle: "Angebote",
       servicesDesc:
-        "Entdecke die Programme Meditation Mastery und Yogatherapie, abgestimmt auf deine Bedürfnisse.",
+        "Entdecke Yogatherapie und Meditation Meistern, abgestimmt auf deine Bedürfnisse.",
       aboutTitle: "Über Ina",
       aboutDesc:
         "Erfahre mehr über meinen Weg vom Burnout zur zertifizierten Yogatherapeutin.",
@@ -189,11 +187,11 @@ export const translations: Record<Lang, Dict> = {
       subheading:
         "Personalisierte Sitzungen, abgestimmt auf deine individuellen Bedürfnisse und Ziele",
       meditationTitle1: "Meditation",
-      meditationTitle2: "Mastery",
+      meditationTitle2: "Meistern",
       meditationDesc:
         "Lerne die Kunst der Meditation mit persönlicher Begleitung",
       meditationBody:
-        "Wir erkunden gemeinsam deine Beweggründe und Ziele, um den Meditationsstil zu finden, der am besten zu dir passt. Zusammen probieren wir verschiedene Techniken aus und entwickeln eine Abfolge, die dich in einen meditativen Zustand führt.",
+        "Wir erkunden gemeinsam deine Motivation und Ziele, um den Meditationsstil zu finden, der am besten zu dir passt. Zusammen probieren wir verschiedene Techniken aus und entwickeln eine Abfolge, die dich in einen meditativen Zustand führt.",
       meditationFeat1: "Schritt-für-Schritt-Anleitung für Anfänger",
       meditationFeat2: "Personalisierte aufgenommene Meditation",
       meditationFeat3: "Sitzungen vor Ort oder online verfügbar",
@@ -204,8 +202,8 @@ export const translations: Record<Lang, Dict> = {
         "Verändere deine Gesundheit durch Atem, Bewegung und Meditation",
       yogaBody:
         "Wir erkunden deine Bedürfnisse und entscheiden, welche Form der Selbstfürsorge am besten zu dir passt. Gemeinsam erstellen wir einen personalisierten Plan aus Bewegung, Atmung und Ruhe, der gezielt deine Themen anspricht.",
-      yogaFeat1: "Wissenschaftlich fundierte Yogasitzungen, abgestimmt auf deinen Körper",
-      yogaFeat2: "Schriftliche Anleitung und Aufnahme deiner persönlichen Sequenz",
+      yogaFeat1: "Wissenschaftlich fundierte Yogasitzungen",
+      yogaFeat2: "Schriftliche Anleitung deiner persönlichen Sequenz",
       yogaFeat3: "Sitzungen vor Ort oder online verfügbar",
       yogaCta: "Starte deine Reise",
       perHour: "/Stunde",
@@ -217,23 +215,23 @@ export const translations: Record<Lang, Dict> = {
     about: {
       meet: "Lerne Ina kennen",
       meet1:
-        "Mein Weg zur Yogatherapeutin entstand aus meinem eigenen Streben nach Balance. Er begann, als Perfektionismus und das Bedürfnis, es anderen recht zu machen, zu einer schweren Last in meinem Leben wurden – befeuert durch eine fordernde Karriere und komplexe familiäre Themen. Das hat mich oft verwirrt, machtlos und vollkommen ausgebrannt zurückgelassen. Diese Belastungen zeigten sich in Form von Angst- und depressiven Episoden, jahrelangem Substanzkonsum sowie körperlichen Symptomen wie Asthma, Schlaflosigkeit und einer Immunschwäche.",
+        "Mein Weg zur Yogatherapeutin entstand aus meiner eigenen Suche nach innerer Balance.\n\nUngesunde Muster von Perfektionismus und dem ständigen Versuch, es anderen recht zu machen, führten mich einst in tiefe Erschöpfung, Ängste und Burnout. Dieser Druck entlud sich schließlich in Essstörungen sowie Substanzkonsum und belastete meine mentale wie körperliche Gesundheit so schwer, dass sich eine Autoimmunerkrankung entwickelte.\n\nDer Wendepunkt kam mit der Entdeckung des Yoga im Jahr 2018. Nach meiner ersten Ausbildungsphase 2020 wurde die tägliche Praxis zu meinem festen Anker – sie gab mir Orientierung und nachhaltige Heilung.\n\nIndem ich Jahr für Jahr alte unterbewusste Ballastschichten abstreife, begegne ich dem Leben heute mit neuer Lebenskraft, Klarheit und Ruhe.",
       meet2:
         "Alles begann sich zu verändern, als ich 2018 Yoga für mich entdeckte. Nach meiner ersten Yogalehrer-Ausbildung 2020 brachte regelmäßige Selbstpraxis tiefe Klarheit. Jedes Jahr fühlt es sich an, als würde ich eine weitere Schicht schwerer unbewusster Last ablegen, was es leichter und angenehmer macht, mit den Herausforderungen des Lebens umzugehen.",
-      practiceTitle: "Von der Praxis zur Berufung",
+      practiceTitle: "VON SELBSTHEILUNG ZUR BERUFUNG",
       practice1:
-        "Beim Unterrichten habe ich schnell gemerkt, dass allgemeine Klassen den einzigartigen und komplexen Symptomen meiner Schüler:innen nicht gerecht werden. Ich war fest entschlossen, jedem Menschen genau die individuellen Anpassungen zu ermöglichen, die er oder sie braucht.",
+        "Meine ersten Jahre als Vinyasa-Yogalehrerin haben mir gezeigt, dass standardisierte Klassen den individuellen und oft komplexen Bedürfnissen der Teilnehmer*innen kaum gerecht werden können. So wuchs in mir der Wunsch zu verstehen, wie ich Anpassungen so gestalten kann, dass mein Unterricht noch inklusiver und zugänglicher wird.",
       practice2:
-        "Diese Mission führte mich zur Spezialisierung auf Yogatherapie – die Kunst, mit der Praxis gezielt Symptome zu adressieren. Da ich erkannt habe, dass die meisten Beschwerden ihren Ursprung in der Psyche haben und die innere Haltung ein wesentlicher Gesundheitsfaktor ist, habe ich parallel einen Master in Neurowissenschaften absolviert.",
+        "Dieser Impuls führte mich zur Spezialisierung auf Yogatherapie – die Kunst, die Praxis ganz auf den einzelnen Menschen abzustimmen. Da viele gesundheitliche Herausforderungen in der Psyche verwurzelt sind und die eigene Haltung maßgeblich zum Wohlbefinden beiträgt, entschied ich mich parallel für ein Masterstudium der Neurowissenschaften.",
       practice3:
-        "Diese doppelte Expertise erlaubt mir einen Ansatz, der ganzheitlich und gleichzeitig wissenschaftlich fundiert ist. Damit habe ich erfolgreich Angstzustände in Gruppen reduziert und privat Klient:innen mit Atemwegs- und Autoimmunerkrankungen begleitet.",
-      rewireTitle: "Neuverdrahtung deiner Resilienz",
+        "Diese doppelte Expertise ermöglicht es mir, einen Ansatz anzubieten, der ganzheitlich fundiert und zugleich wissenschaftlich begründet ist. In meiner Arbeit konnte ich diesen Weg bereits erfolgreich anwenden – unter anderem durch die Reduktion von Angstzuständen in Gruppenkursen sowie in der Einzelbegleitung von Klientinnen und Klienten mit Atemwegs- und Autoimmunerkrankungen.",
+      rewireTitle: "NEUE RESILIENZ SCHAFFEN",
       rewire1:
-        "Heute verfolgt meine Arbeit ein einfaches Ziel: die Ohnmacht, die mit einer Diagnose oder chronischem Stress einhergeht, aufzulösen und dir Selbstkontrolle und Stärke zurückzugeben.",
+        "Heute verfolgt meine Arbeit ein einfachen Ziel: das Gefühl der Hilflosigkeit aufzulösen, das oft mit chronischem Stress einhergeht, und dir die Selbstwirksamkeit und Kontrolle über das eigene Leben zurückzugeben.",
       rewire2:
-        "Ich begleite vor allem neugierige, leistungsstarke Menschen, die sich erschöpft, ausgebrannt oder von einer Diagnose entmutigt fühlen.",
+        "Ich habe mich darauf spezialisiert, neugierige und leistungsorientierte Menschen zu begleiten, die sich erschöpft oder ausgebrannt fühlen oder durch eine Diagnose verunsichert sind.",
       rewire3:
-        "Mein Ansatz ist darauf ausgelegt, Neuroplastizität aufzubauen – die Fähigkeit des Gehirns, sich zu verändern und deine gesamte Perspektive zu verschieben. Durch personalisierte, achtsame Bewegungs- und Atemsequenzen bauen wir bewusst eine Routine auf, die sich erdend, sicher und richtig für deinen einzigartigen Körper anfühlt.",
+        "Mein Ansatz zielt darauf ab, die neuronale Anpassungsfähigkeit deines Gehirns zu stärken und deine Perspektive nachhaltig zu verändern. Durch individuell abgestimmte, achtsame Bewegungs- und Atemsequenzen entwickeln wir gemeinsam eine Routine, die Ihnen Halt und Sicherheit schenkt – maßgeschneidert für Ihren Körper und Ihre Bedürfnisse.",
       processHeader: "Dieser Prozess ist zutiefst lehrreich und stärkend:",
       processItem1Bold: "Das Fundament:",
       processItem1:
@@ -258,8 +256,6 @@ export const translations: Record<Lang, Dict> = {
       guideMeditationBold: "Meditation Mastery",
       guideMeditationSuffix:
         ", wenn du bereit bist, deinen Fokus zu schärfen, dein Selbstbewusstsein zu vertiefen und dich stärker verbunden und präsent in deinem Leben zu fühlen.",
-      closing1: "Deine innere Haltung ist alles.",
-      closing2: "Bist du bereit, die tiefe Kraft zu entdecken, die du über deine Gesundheit hast?",
       certs: "Meine Zertifizierungen",
       accreditedBy: "Zertifiziert von",
     },
@@ -336,7 +332,7 @@ export type Dict = {
     guideHeader: string;
     guideYogaPrefix: string; guideYogaBold: string; guideYogaSuffix: string;
     guideMeditationPrefix: string; guideMeditationBold: string; guideMeditationSuffix: string;
-    closing1: string; closing2: string; certs: string; accreditedBy: string;
+    certs: string; accreditedBy: string;
   };
   testimonials: { heading: string; subheading: string; rating: string; reviews: string };
   contact: {
