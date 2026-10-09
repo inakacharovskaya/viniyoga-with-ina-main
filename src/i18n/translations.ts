@@ -65,22 +65,20 @@ export const translations: Record<Lang, Dict> = {
       meet: "Meet Ina",
       meet1:
         "My path to becoming a yoga therapist was inspired by my own pursuit of balance. Unhealthy patterns of perfectionism and people-pleasing once left me exhausted, anxious, and deeply burnt out. Coping with this pressure through eating disorders and substance use eventually took a severe toll on both my mental and physical health, contributing to an autoimmune condition.\n\nMy healing journey began when I discovered yoga in 2018. After completing my first teacher training in 2020, daily practice became my anchor, bringing clear direction and steady healing. Year by year, shedding old subconscious burdens has allowed me to meet life with greater vitality, clarity, and peace.",
-      meet2:
-        "Everything started changing when I discovered yoga in 2018. After my first Teacher Training in 2020, consistent self-practice brought profound clarity. Every year it feels like I am shedding a layer of heavy subconscious burden, making it easier and more enjoyable to manage life's challenges.",
       practiceTitle: "From Practice to Professional Purpose",
       practice1:
         "My early years of teaching Vinyasa flows made me notice that generic classes failed to address my students' unique and often complex needs. I became determined to learn how to offer variations and adjustments to make my classes more inclusive and accessible.",
       practice2:
-        "This mission led me to specialise in Yoga Therapy, the art of personalising the practice. Realising that most issues stem from the psyche and that mindset is a major health contributor, I simultaneously pursued a Master's in Neuroscience.",
+        "This mission led me to specialise in Yoga Therapy, the art of personalising practice. Realising that most restrictions stem from the psyche and that mindset is a major health contributor, I simultaneously pursued a Master's in Brain Sciences.",
       practice3:
-        "This dual expertise allows me to offer an approach that is both holistic and scientifically validated. I applied this by successfully reducing Anxiety in student groups and working privately with clients navigating respiratory and autoimmune disorders.",
+        "Combining these two perspectives allows me to offer an approach that is both holistic and scientifically grounded. In practice, I’ve used this framework to help university students overcome exam anxiety and supporting private clients as they navigate a freshly diagnosed autoimmune condition.",
       rewireTitle: "REWIRING YOUR RESILIENCE",
       rewire1:
-        "Today, my art is rooted in this simple goal: to dismantle the powerlessness that comes with a diagnosis or chronic stress and transfer that self-control and power to you.",
+        "Today, my art is rooted in one simple goal: To dismantle the powerlessness that comes with a chronically stressed nervous system and transfer the power and self-control to you.",
       rewire2:
         "I specialise in serving curious, high-achieving individuals who feel exhausted, burnt out, or defeated by a diagnosis.",
       rewire3:
-        "My approach is designed to build your brain's ability to change and shift your entire perspective. By using personalised, mindful movement and breath sequences, we consciously build a routine that feels grounding, safe, and right for your unique body.",
+        "My approach is designed to awaken your brain's ability to shift your entire perspective. By using personalised, mindful movement, breath sequences and guided meditations, we consciously build a routine that makes you feel grounded, safe, and present in your beautiful body.",
       processHeader: "This process is deeply educational and empowering:",
       processItem1Bold: "The Foundation:",
       processItem1:
@@ -144,6 +142,8 @@ export const translations: Record<Lang, Dict> = {
       tagline: "Personalised yoga and meditation in Münster, Germany",
       follow: "Follow me on Facebook",
       instagram: "Subscribe to daily self-care reminders on Instagram",
+      legalNotice: "Impressum",
+      privacyPolicy: "Privacy Policy",
     },
     toggle: {
       label: "Switch language",
@@ -216,22 +216,20 @@ export const translations: Record<Lang, Dict> = {
       meet: "Lerne Ina kennen",
       meet1:
         "Mein Weg zur Yogatherapeutin entstand aus meiner eigenen Suche nach innerer Balance.\n\nUngesunde Muster von Perfektionismus und dem ständigen Versuch, es anderen recht zu machen, führten mich einst in tiefe Erschöpfung, Ängste und Burnout. Dieser Druck entlud sich schließlich in Essstörungen sowie Substanzkonsum und belastete meine mentale wie körperliche Gesundheit so schwer, dass sich eine Autoimmunerkrankung entwickelte.\n\nDer Wendepunkt kam mit der Entdeckung des Yoga im Jahr 2018. Nach meiner ersten Ausbildungsphase 2020 wurde die tägliche Praxis zu meinem festen Anker – sie gab mir Orientierung und nachhaltige Heilung.\n\nIndem ich Jahr für Jahr alte unterbewusste Ballastschichten abstreife, begegne ich dem Leben heute mit neuer Lebenskraft, Klarheit und Ruhe.",
-      meet2:
-        "Alles begann sich zu verändern, als ich 2018 Yoga für mich entdeckte. Nach meiner ersten Yogalehrer-Ausbildung 2020 brachte regelmäßige Selbstpraxis tiefe Klarheit. Jedes Jahr fühlt es sich an, als würde ich eine weitere Schicht schwerer unbewusster Last ablegen, was es leichter und angenehmer macht, mit den Herausforderungen des Lebens umzugehen.",
       practiceTitle: "VON SELBSTHEILUNG ZUR BERUFUNG",
       practice1:
-        "Meine ersten Jahre als Vinyasa-Yogalehrerin haben mir gezeigt, dass standardisierte Klassen den individuellen und oft komplexen Bedürfnissen der Teilnehmer*innen kaum gerecht werden können. So wuchs in mir der Wunsch zu verstehen, wie ich Anpassungen so gestalten kann, dass mein Unterricht noch inklusiver und zugänglicher wird.",
+        "Meine ersten Jahre als Vinyasa-Yogalehrerin haben mir gezeigt, dass standardisierte Klassen den individuellen und oft komplexen Bedürfnissen der Teilnehmer*innen nicht gedeckt werden können. So wuchs in mir der Wunsch zu verstehen, wie ich Variationen so gestalten kann, dass mein Unterricht noch inklusiver und zugänglicher wird.",
       practice2:
-        "Dieser Impuls führte mich zur Spezialisierung auf Yogatherapie – die Kunst, die Praxis ganz auf den einzelnen Menschen abzustimmen. Da viele gesundheitliche Herausforderungen in der Psyche verwurzelt sind und die eigene Haltung maßgeblich zum Wohlbefinden beiträgt, entschied ich mich parallel für ein Masterstudium der Neurowissenschaften.",
+        "Dieser Impuls führte mich zur Spezialisierung auf Yogatherapie – eine Kunst, die Praxis ganz auf den einzelnen Menschen abzustimmen. Da viele unserer Herausforderungen in der Psyche verwurzelt sind und Einstellung zu unserem Wohlbefinden beiträgt, entschied ich mich parallel für ein Masterstudium der Gehirnwissenschaften.",
       practice3:
-        "Diese doppelte Expertise ermöglicht es mir, einen Ansatz anzubieten, der ganzheitlich fundiert und zugleich wissenschaftlich begründet ist. In meiner Arbeit konnte ich diesen Weg bereits erfolgreich anwenden – unter anderem durch die Reduktion von Angstzuständen in Gruppenkursen sowie in der Einzelbegleitung von Klientinnen und Klienten mit Atemwegs- und Autoimmunerkrankungen.",
+        "Dieser duale Werdegang ermöglicht es mir, einen Ansatz anzubieten, welcher ganzheitlich fundiert und zugleich wissenschaftlich begründet ist. In meiner bisherigen Arbeit hatte ich bereits öfter die Gelegenheit meine Expertise anzuwenden. So konnte ich beispielsweise Studierenden helfen, Prüfungsängste abzubauen, und Klient*innen mit Autoimmunerkrankungen dabei begleiten, ihre Praxis individuell auszurichten.",
       rewireTitle: "NEUE RESILIENZ SCHAFFEN",
       rewire1:
-        "Heute verfolgt meine Arbeit ein einfachen Ziel: das Gefühl der Hilflosigkeit aufzulösen, das oft mit chronischem Stress einhergeht, und dir die Selbstwirksamkeit und Kontrolle über das eigene Leben zurückzugeben.",
+        "Heute verfolgt meine Arbeit ein einfaches Ziel: das Gefühl der Hilflosigkeit aufzulösen, das oft mit chronischem Stress einhergeht, deine Selbstwirksamkeit zu stärken und dir die Kontrolle über dein Leben zurückzugeben.",
       rewire2:
-        "Ich habe mich darauf spezialisiert, neugierige und leistungsorientierte Menschen zu begleiten, die sich erschöpft oder ausgebrannt fühlen oder durch eine Diagnose verunsichert sind.",
+        "Ich habe mich darauf spezialisiert, neugierige und leistungsorientierte Menschen zu begleiten, die mit Symptomen von Burnout kämpfen oder durch eine Diagnose verunsichert sind.",
       rewire3:
-        "Mein Ansatz zielt darauf ab, die neuronale Anpassungsfähigkeit deines Gehirns zu stärken und deine Perspektive nachhaltig zu verändern. Durch individuell abgestimmte, achtsame Bewegungs- und Atemsequenzen entwickeln wir gemeinsam eine Routine, die Ihnen Halt und Sicherheit schenkt – maßgeschneidert für Ihren Körper und Ihre Bedürfnisse.",
+        "Mein Ansatz zielt darauf ab, die neuronale Anpassungsfähigkeit deines Gehirns zu stärken und deine Perspektive nachhaltig zu verändern. Mit individuell auf dich abgestimmten Bewegungs-, Meditations- und Atemsequenzen erschaffen wir gemeinsam eine Routine, die dir Halt schenkt – maßgeschneidert für deinen Körper und deine Bedürfnisse.",
       processHeader: "Dieser Prozess ist zutiefst lehrreich und stärkend:",
       processItem1Bold: "Das Fundament:",
       processItem1:
@@ -296,6 +294,8 @@ export const translations: Record<Lang, Dict> = {
       tagline: "Personalisiertes Yoga und Meditation in Münster, Deutschland",
       follow: "Folge mir auf Facebook",
       instagram: "Abonniere tägliche Self-Care-Erinnerungen auf Instagram",
+      legalNotice: "Impressum",
+      privacyPolicy: "Datenschutzerklärung",
     },
     toggle: {
       label: "Sprache wechseln",
@@ -345,6 +345,6 @@ export type Dict = {
     responseTime: string; responseValue: string; responseSub: string;
     expect: string; expect1: string; expect2: string; expect4: string;
   };
-  footer: { rights: string; tagline: string; follow: string; instagram: string };
+  footer: { rights: string; tagline: string; follow: string; instagram: string; legalNotice: string; privacyPolicy: string };
   toggle: { label: string };
 };

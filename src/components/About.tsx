@@ -132,13 +132,19 @@ export const About = () => {
                   {t.about.accreditedBy}
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8">
-                   <img
-                     src={iayt}
-                     alt="IAYT Accredited Yoga Therapy Training Program"
-                     className="w-64 h-auto object-contain"
-                   />
                    <a
-                     href="https://yogatherapygreece.com/"
+                     href="https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/1525669833/treasury/?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <img
+                       src={iayt}
+                       alt="IAYT Accredited Yoga Therapy Training Program"
+                       className="w-64 h-auto object-contain"
+                     />
+                   </a>
+                   <a
+                     href="https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/1525766666/treasury/?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0"
                      target="_blank"
                      rel="noopener noreferrer"
                    >

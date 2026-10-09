@@ -1,4 +1,5 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Footer = () => {
@@ -6,6 +7,15 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-8">
       <div className="container px-4 mx-auto text-center">
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm opacity-80 mb-3">
+          <Link to="/impressum" className="hover:opacity-100 transition-opacity">
+            {t.footer.legalNotice}
+          </Link>
+          <span aria-hidden="true">•</span>
+          <Link to="/datenschutz" className="hover:opacity-100 transition-opacity">
+            {t.footer.privacyPolicy}
+          </Link>
+        </div>
         <p className="text-sm opacity-80">
           © {new Date().getFullYear()} {t.brandName}. {t.footer.rights}
         </p>
@@ -30,6 +40,15 @@ export const Footer = () => {
             className="opacity-80 hover:opacity-100 transition-opacity"
           >
             <Instagram className="h-6 w-6 text-background" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alinakacharovskaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="opacity-80 hover:opacity-100 transition-opacity"
+          >
+            <Linkedin className="h-6 w-6 text-background" />
           </a>
         </div>
       </div>
