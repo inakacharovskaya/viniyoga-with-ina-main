@@ -70,6 +70,15 @@ const Impressum = () => {
                     : "I do not participate in a dispute resolution procedure before a consumer arbitration board."}
                 </p>
               </section>
+
+              <section className="space-y-6 text-center">
+                <h2 className="text-xl md:text-2xl text-foreground uppercase">{isGerman ? "Zertifikate" : "Certificates"}</h2>
+                <img
+                  src="/images/certificates/Alina_IAYT800.jpg"
+                  alt={isGerman ? "IAYT-Zertifikat von Alina Kacharovskaya" : "IAYT certificate of Alina Kacharovskaya"}
+                  className="mx-auto h-auto w-full max-w-3xl object-contain"
+                />
+              </section>
             </div>
           </div>
         </div>

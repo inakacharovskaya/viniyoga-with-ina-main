@@ -25,7 +25,13 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 min-w-0">
-            <img src={brandLogo} alt={`${t.brandName} logo`} className="h-10 w-auto flex-shrink-0" />
+            <img src={brandLogo} alt={`${t.brandName} logo`} className="hidden h-10 w-auto flex-shrink-0 md:block" />
+            <img
+              src={brandLogo}
+              alt={`${t.brandName} logo`}
+              className="block h-10 w-auto flex-shrink-0 md:hidden"
+              style={{ filter: "brightness(0) saturate(100%)" }}
+            />
             <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.22em] leading-tight">
               {(() => {
                 const parts = t.brandName.split(" ");
@@ -33,9 +39,9 @@ export const Navigation = () => {
                 const rest = parts.slice(1).join("\u00A0"); // non-breaking spaces keep "with Ina" together
                 return (
                   <>
-                    {first}
+                    {first}{" "}
                     <wbr />
-                    <span className="ml-4 whitespace-nowrap tracking-[0.22em]">{rest}</span>
+                    <span className="whitespace-nowrap tracking-[0.22em]">{rest}</span>
                   </>
                 );
               })()}
