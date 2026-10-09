@@ -323,7 +323,7 @@ export type Dict = {
     perHour: string; firstFree: string; footnote: string; footnoteRest: string;
   };
   about: {
-    meet: string; meet1: string; meet2: string;
+    meet: string; meet1: string;
     practiceTitle: string; practice1: string; practice2: string; practice3: string;
     rewireTitle: string; rewire1: string; rewire2: string; rewire3: string;
     processHeader: string; processItem1Bold: string; processItem1: string; processItem2Bold: string; processItem2: string;

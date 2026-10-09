@@ -39,15 +39,13 @@ export const About = () => {
               {t.about.meet}
             </h2>
             <div className="prose prose-lg max-w-none mx-auto text-foreground/90 space-y-8 text-center">
-              {[t.about.meet1, t.about.meet2].map((para, pIdx) => (
-                <p key={pIdx} className="text-xl leading-relaxed">
-                  {(para.match(/[^.!?]+[.!?]*\s*/g) ?? [para]).map((sentence, sIdx) => (
-                    <span key={sIdx} className="block text-pretty">
-                      {sentence.trim()}
-                    </span>
-                  ))}
-                </p>
-              ))}
+              <p className="text-xl leading-relaxed">
+                {(t.about.meet1.match(/[^.!?]+[.!?]*\s*/g) ?? [t.about.meet1]).map((sentence, sIdx) => (
+                  <span key={sIdx} className="block text-pretty">
+                    {sentence.trim()}
+                  </span>
+                ))}
+              </p>
             </div>
           </div>
         </div>
