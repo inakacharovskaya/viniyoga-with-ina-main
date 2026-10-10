@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { siteImages } from "@/lib/assets";
 
 const brandLogo = siteImages.brand.logo;
-const navLinkClassName = "text-muted-foreground hover:text-foreground transition-colors uppercase tracking-[0.1em] text-sm font-semibold";
+const navLinkClassName = "text-muted-foreground hover:text-foreground transition-colors tracking-[0.1em] text-sm font-semibold";
 const bookButtonClassName = "uppercase tracking-[0.1em]";
 
 export const Navigation = () => {
@@ -30,7 +30,6 @@ export const Navigation = () => {
               src={brandLogo}
               alt={`${t.brandName} logo`}
               className="block h-10 w-auto flex-shrink-0 md:hidden"
-              style={{ filter: "brightness(0) saturate(100%)" }}
             />
             <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.22em] leading-tight">
               {(() => {

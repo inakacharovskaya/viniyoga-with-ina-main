@@ -40,7 +40,7 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 uppercase">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t.index.sectionTitle}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ const Index = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <section.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <CardTitle className="text-xl tracking-[0.2em] uppercase">{section.title}</CardTitle>
+                  <CardTitle className="text-xl tracking-[0.2em]">{section.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{section.description}</p>

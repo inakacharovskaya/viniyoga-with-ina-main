@@ -133,10 +133,6 @@ All colors MUST be HSL.
     letter-spacing: 0.15em;
   }
 
-  h1 {
-    text-transform: uppercase;
-  }
-
   .font-caption {
     letter-spacing: 0.20em;
   }

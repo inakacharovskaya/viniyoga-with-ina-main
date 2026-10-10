@@ -31,14 +31,14 @@ const Datenschutz = () => {
         <div className="container mx-auto max-w-4xl px-4">
           <div className="space-y-10 text-center">
             <header className="pt-8">
-              <h1 className="text-2xl md:text-4xl text-foreground uppercase">
+              <h1 className="text-2xl md:text-4xl text-foreground">
                 {isGerman ? "Datenschutzerklärung" : "Privacy Policy"}
               </h1>
             </header>
 
             <div className="space-y-8 text-foreground/90 text-center">
               <section className="space-y-4 text-center">
-                <h2 className="text-2xl md:text-3xl text-foreground uppercase">{isGerman ? "Verantwortliche Stelle" : "Responsible controller"}</h2>
+                <h2 className="text-2xl md:text-3xl text-foreground">{isGerman ? "Verantwortliche Stelle" : "Responsible controller"}</h2>
                 <p className="text-base md:text-lg leading-relaxed">
                   Alina Kacharovskaya<br />
                   Altenbergerstraße 30a<br />
@@ -51,7 +51,7 @@ const Datenschutz = () => {
               </section>
 
               <section className="space-y-4 text-center text-center">
-                <h2 className="text-2xl md:text-3xl text-foreground uppercase">{isGerman ? "Hosting" : "Hosting"}</h2>
+                <h2 className="text-2xl md:text-3xl text-foreground">{isGerman ? "Hosting" : "Hosting"}</h2>
                 <p className="text-base md:text-lg leading-relaxed">
                   {isGerman
                     ? "Diese Website wird von Vercel Inc. gehostet (440 N Barranca Ave #4133, Covina, CA 91723, USA)."
@@ -65,7 +65,7 @@ const Datenschutz = () => {
               </section>
 
               <section className="space-y-4 text-center">
-                <h2 className="text-2xl md:text-3xl text-foreground uppercase">{isGerman ? "Webfonts" : "Web fonts"}</h2>
+                <h2 className="text-2xl md:text-3xl text-foreground">{isGerman ? "Webfonts" : "Web fonts"}</h2>
                 <p className="text-base md:text-lg leading-relaxed">
                   {isGerman
                     ? "Auf dieser Website werden die Schriftarten Montserrat und Yeseva One verwendet. Die Fonts werden lokal im Projekt/Repository gehostet; es findet keine Übermittlung von personenbezogenen Daten oder IP-Adressen an Google-Server statt."
@@ -74,7 +74,7 @@ const Datenschutz = () => {
               </section>
 
               <section className="space-y-4 text-center">
-                <h2 className="text-2xl md:text-3xl text-foreground uppercase">{isGerman ? "Kontaktanfragen" : "Contact inquiries"}</h2>
+                <h2 className="text-2xl md:text-3xl text-foreground">{isGerman ? "Kontaktanfragen" : "Contact inquiries"}</h2>
                 <p className="text-base md:text-lg leading-relaxed">
                   {isGerman
                     ? "E-Mail-Anfragen werden gemäß Art. 6 Abs. 1 lit. b DSGVO (Vertrag / vorvertragliches Verhältnis) und Art. 6 Abs. 1 lit. f DSGVO verarbeitet."
@@ -83,7 +83,7 @@ const Datenschutz = () => {
               </section>
 
               <section className="space-y-4 text-center">
-                <h2 className="text-2xl md:text-3xl text-foreground uppercase">{isGerman ? "Ihre Rechte" : "Your rights"}</h2>
+                <h2 className="text-2xl md:text-3xl text-foreground">{isGerman ? "Ihre Rechte" : "Your rights"}</h2>
                 <p className="text-base md:text-lg leading-relaxed">
                   {isGerman
                     ? "Sie haben gemäß DSGVO folgende Rechte:" : "Under the GDPR, you have the following rights:"}

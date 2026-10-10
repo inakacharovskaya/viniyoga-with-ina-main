@@ -43,11 +43,11 @@ export const Services = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <CardTitle className="text-3xl mb-2 uppercase">
+              <CardTitle className="text-3xl mb-2">
                 <span className="block tracking-[0.15em]">{t.services.yogaTitle1}</span>
                 <span className="block tracking-[0.15em]">{renderSpacedWord(t.services.yogaTitle2)}</span>
               </CardTitle>
-              <CardDescription className="text-lg uppercase">
+              <CardDescription className="text-lg">
                 {t.services.yogaDesc}
               </CardDescription>
             </CardHeader>
@@ -97,11 +97,11 @@ export const Services = () => {
               <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
                 <Sparkles className="h-8 w-8 text-secondary" />
               </div>
-              <CardTitle className="text-3xl mb-2 uppercase">
+              <CardTitle className="text-3xl mb-2">
                 <span className="block tracking-[0.15em]">{t.services.meditationTitle1}</span>
                 <span className="block tracking-[0.15em]">{t.services.meditationTitle2}</span>
               </CardTitle>
-              <CardDescription className="text-lg uppercase">
+              <CardDescription className="text-lg">
                 {t.services.meditationDesc}
               </CardDescription>
             </CardHeader>
@@ -151,8 +151,8 @@ export const Services = () => {
             {t.about.guideHeader}
           </h4>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-secondary/10 border-2 border-secondary/50 rounded-xl overflow-hidden shadow-sm">
-              <div className="h-1.5 bg-secondary" />
+            <div className="bg-primary/10 border-2 border-primary/50 rounded-xl overflow-hidden shadow-sm">
+              <div className="h-1.5 bg-primary" />
               <div className="p-6">
                 <p className="text-base leading-relaxed text-foreground/90">
                   {t.about.guideYogaPrefix}
@@ -161,8 +161,8 @@ export const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-primary/10 border-2 border-primary/50 rounded-xl overflow-hidden shadow-sm">
-              <div className="h-1.5 bg-primary" />
+            <div className="bg-secondary/10 border-2 border-secondary/50 rounded-xl overflow-hidden shadow-sm">
+              <div className="h-1.5 bg-secondary" />
               <div className="p-6">
                 <p className="text-base leading-relaxed text-foreground/90">
                   {t.about.guideMeditationPrefix}
@@ -175,10 +175,10 @@ export const Services = () => {
         </div>
 
         <div className="text-center mt-16 px-4">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-[0.1em] leading-snug max-w-3xl mx-auto uppercase">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-[0.1em] leading-snug max-w-3xl mx-auto">
             {t.services.footnote}
           </h3>
-          <h4 className="text-xl md:text-2xl font-bold text-foreground whitespace-pre-line mt-2 max-w-3xl mx-auto uppercase">
+          <h4 className="text-lg font-normal text-foreground whitespace-pre-line mt-2 max-w-3xl mx-auto" style={{ fontFamily: "Montserrat, sans-serif" }}>
             {t.services.footnoteRest}
           </h4>
         </div>

@@ -14,8 +14,8 @@ export const translations: Record<Lang, Dict> = {
       title1: "Find Your",
       title2: "Inner Peace",
       subtitle:
-        "Transform your health and wellness through personalised yoga and meditation",
-      bookFree: "Book Your Assessment for FREE",
+        "Transform your health\nthrough personalised yoga",
+      bookFree: "Book your Assessment",
       explore: "Explore Services",
       imgAlt: "Ina meditating in the forest",
     },
@@ -36,30 +36,30 @@ export const translations: Record<Lang, Dict> = {
     },
     services: {
       heading: "Your Path to Wellness",
-      subheading: "Personalized sessions designed for your unique needs and goals",
+      subheading: "Personalized sessions designed for your unique goals",
       meditationTitle1: "Meditation",
       meditationTitle2: "Mastery",
       meditationDesc: "Learn the art of meditation with personalized guidance",
       meditationBody:
-        "We will explore your motivations and goals to find the meditation style that suits you best. Together we will explore different techniques and come up with a sequence that will guide you into a meditative state.",
+        "We will explore your motivations to find the meditation style that suits you best. Together we will explore different techniques and come up with a sequence that will guide you into a meditative state.",
       meditationFeat1: "Step-by-step guidance for beginners",
       meditationFeat2: "Personalised recorded meditation",
       meditationFeat3: "In-person or online sessions available",
       meditationCta: "Begin Meditating",
       yogaTitle1: "Yoga",
       yogaTitle2: "Therapy",
-      yogaDesc: "Transform your health through breath, movement, and meditation",
+      yogaDesc: "Transform your health through mindful movement and breathwork",
       yogaBody:
         "We will explore your needs and decide what method of self-care suits you best. Together we will create a personalised plan of movement, breathing, and rest that targets your specific areas of care.",
-      yogaFeat1: "Science-based yoga sessions tailored to your body",
-      yogaFeat2: "Write-up and recording of personalised sequence",
+      yogaFeat1: "Science-based yoga sessions",
+      yogaFeat2: "Write-up of personalised sequence",
       yogaFeat3: "In-person or online sessions available",
       yogaCta: "Start Your Journey",
       perHour: "/hour",
-      firstFree: "FREE online assessment",
+      firstFree: "Free online assessment",
       footnote: "Every body is unique",
       footnoteRest:
-        "come without expectations,\nleave with knowledge and empowerment!",
+        "Come without expectations,\nleave with knowledge and empowerment!",
     },
     about: {
       meet: "Meet Ina",
@@ -72,7 +72,7 @@ export const translations: Record<Lang, Dict> = {
         "This mission led me to specialise in Yoga Therapy, the art of personalising practice. Realising that most restrictions stem from the psyche and that mindset is a major health contributor, I simultaneously pursued a Master's in Brain Sciences.",
       practice3:
         "Combining these two perspectives allows me to offer an approach that is both holistic and scientifically grounded. In practice, I’ve used this framework to help university students overcome exam anxiety and supporting private clients as they navigate a freshly diagnosed autoimmune condition.",
-      rewireTitle: "REWIRING YOUR RESILIENCE",
+      rewireTitle: "Rewiring Your Resilience",
       rewire1:
         "Today, my art is rooted in one simple goal: To dismantle the powerlessness that comes with a chronically stressed nervous system and transfer the power and self-control to you.",
       rewire2:
@@ -133,7 +133,7 @@ export const translations: Record<Lang, Dict> = {
       responseValue: "100% response rate",
       responseSub: "Usually within 24 hours",
       expect: "What to expect:",
-      expect1: "FREE online assessment",
+      expect1: "Free online assessment",
       expect2: "Personalized approach to your needs",
       expect4: "Flexible scheduling to fit your life",
     },
@@ -162,8 +162,8 @@ export const translations: Record<Lang, Dict> = {
       title1: "Finde deinen",
       title2: "inneren Frieden",
       subtitle:
-        "Verändere deine Gesundheit und dein Wohlbefinden mit personalisiertem Yoga und Meditation",
-      bookFree: "Buche dein KOSTENLOSES Erstgespräch",
+        "Verändere deine Gesundheit\ndurch personalisiertes Yoga",
+      bookFree: "Buche dein Erstgespräch",
       explore: "Angebot entdecken",
       imgAlt: "Ina meditiert im Wald",
     },
@@ -185,13 +185,13 @@ export const translations: Record<Lang, Dict> = {
     services: {
       heading: "Dein Weg zum Wohlbefinden",
       subheading:
-        "Personalisierte Sitzungen, abgestimmt auf deine individuellen Bedürfnisse und Ziele",
+        "Personalisierte Sitzungen, abgestimmt auf deine individuellen Ziele",
       meditationTitle1: "Meditation",
       meditationTitle2: "Meistern",
       meditationDesc:
         "Lerne die Kunst der Meditation mit persönlicher Begleitung",
       meditationBody:
-        "Wir erkunden gemeinsam deine Motivation und Ziele, um den Meditationsstil zu finden, der am besten zu dir passt. Zusammen probieren wir verschiedene Techniken aus und entwickeln eine Abfolge, die dich in einen meditativen Zustand führt.",
+        "Wir erkunden gemeinsam deine Motivation, um den Meditationsstil zu finden, der am besten zu dir passt. Zusammen probieren wir verschiedene Techniken aus und entwickeln eine Abfolge, die dich in einen meditativen Zustand führt.",
       meditationFeat1: "Schritt-für-Schritt-Anleitung für Anfänger",
       meditationFeat2: "Personalisierte aufgenommene Meditation",
       meditationFeat3: "Sitzungen vor Ort oder online verfügbar",
@@ -199,31 +199,31 @@ export const translations: Record<Lang, Dict> = {
       yogaTitle1: "Yoga",
       yogaTitle2: "therapie",
       yogaDesc:
-        "Verändere deine Gesundheit durch Atem, Bewegung und Meditation",
+        "Verändere deine Gesundheit durch achtsame Bewegung und Atemarbeit",
       yogaBody:
         "Wir erkunden deine Bedürfnisse und entscheiden, welche Form der Selbstfürsorge am besten zu dir passt. Gemeinsam erstellen wir einen personalisierten Plan aus Bewegung, Atmung und Ruhe, der gezielt deine Themen anspricht.",
       yogaFeat1: "Wissenschaftlich fundierte Yogasitzungen",
-      yogaFeat2: "Schriftliche Anleitung deiner persönlichen Sequenz",
+      yogaFeat2: "Schriftliche Ausarbeitung deiner persönlichen Sequenz",
       yogaFeat3: "Sitzungen vor Ort oder online verfügbar",
       yogaCta: "Starte deine Reise",
       perHour: "/Stunde",
-      firstFree: "KOSTENLOSES Online-Erstgespräch",
+      firstFree: "Kostenloses Online-Erstgespräch",
       footnote: "Jeder Körper ist einzigartig",
       footnoteRest:
-        "komm ohne Erwartungen,\ngeh mit Wissen und Stärke!",
+        "Komm ohne Erwartungen,\ngeh mit Wissen und Stärke!",
     },
     about: {
       meet: "Lerne Ina kennen",
       meet1:
         "Mein Weg zur Yogatherapeutin entstand aus meiner eigenen Suche nach innerer Balance.\n\nUngesunde Muster von Perfektionismus und dem ständigen Versuch, es anderen recht zu machen, führten mich einst in tiefe Erschöpfung, Ängste und Burnout. Dieser Druck entlud sich schließlich in Essstörungen sowie Substanzkonsum und belastete meine mentale wie körperliche Gesundheit so schwer, dass sich eine Autoimmunerkrankung entwickelte.\n\nDer Wendepunkt kam mit der Entdeckung des Yoga im Jahr 2018. Nach meiner ersten Ausbildungsphase 2020 wurde die tägliche Praxis zu meinem festen Anker – sie gab mir Orientierung und nachhaltige Heilung.\n\nIndem ich Jahr für Jahr alte unterbewusste Ballastschichten abstreife, begegne ich dem Leben heute mit neuer Lebenskraft, Klarheit und Ruhe.",
-      practiceTitle: "VON SELBSTHEILUNG ZUR BERUFUNG",
+      practiceTitle: "Von Selbstheilung zur Berufung",
       practice1:
         "Meine ersten Jahre als Vinyasa-Yogalehrerin haben mir gezeigt, dass standardisierte Klassen den individuellen und oft komplexen Bedürfnissen der Teilnehmer*innen nicht gedeckt werden können. So wuchs in mir der Wunsch zu verstehen, wie ich Variationen so gestalten kann, dass mein Unterricht noch inklusiver und zugänglicher wird.",
       practice2:
         "Dieser Impuls führte mich zur Spezialisierung auf Yogatherapie – eine Kunst, die Praxis ganz auf den einzelnen Menschen abzustimmen. Da viele unserer Herausforderungen in der Psyche verwurzelt sind und Einstellung zu unserem Wohlbefinden beiträgt, entschied ich mich parallel für ein Masterstudium der Gehirnwissenschaften.",
       practice3:
         "Dieser duale Werdegang ermöglicht es mir, einen Ansatz anzubieten, welcher ganzheitlich fundiert und zugleich wissenschaftlich begründet ist. In meiner bisherigen Arbeit hatte ich bereits öfter die Gelegenheit meine Expertise anzuwenden. So konnte ich beispielsweise Studierenden helfen, Prüfungsängste abzubauen, und Klient*innen mit Autoimmunerkrankungen dabei begleiten, ihre Praxis individuell auszurichten.",
-      rewireTitle: "NEUE RESILIENZ SCHAFFEN",
+      rewireTitle: "Neue Resilienz schaffen",
       rewire1:
         "Heute verfolgt meine Arbeit ein einfaches Ziel: das Gefühl der Hilflosigkeit aufzulösen, das oft mit chronischem Stress einhergeht, deine Selbstwirksamkeit zu stärken und dir die Kontrolle über dein Leben zurückzugeben.",
       rewire2:
@@ -285,7 +285,7 @@ export const translations: Record<Lang, Dict> = {
       responseValue: "100% Antwortquote",
       responseSub: "Meist innerhalb von 24 Stunden",
       expect: "Was dich erwartet:",
-      expect1: "KOSTENLOSES Online-Erstgespräch",
+      expect1: "Kostenloses Online-Erstgespräch",
       expect2: "Persönlicher Ansatz für deine Bedürfnisse",
       expect4: "Flexible Terminplanung, die in dein Leben passt",
     },

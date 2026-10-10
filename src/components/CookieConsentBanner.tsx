@@ -63,7 +63,7 @@ export const CookieConsentBanner = () => {
       <div className="mx-auto max-w-5xl rounded-2xl border border-border/60 bg-background/80 backdrop-blur-md shadow-lg md:p-6 p-4">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
+            <p className="text-sm font-semibold tracking-[0.12em] text-foreground">
               Cookie Preferences
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
