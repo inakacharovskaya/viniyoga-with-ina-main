@@ -5,22 +5,6 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const BOOKING_URL = "https://calendar.app.google/Ng7vmb3euhFMuxcc9";
 
-const renderSpacedWord = (word: string) => {
-  return word.split("").map((char, i) => {
-    const next = word[i + 1];
-    const isH = char.toLowerCase() === "h";
-    const nextIsE = next && next.toLowerCase() === "e";
-    return (
-      <span
-        key={i}
-        className={`inline-block tracking-[0.15em] ${isH && nextIsE ? "mr-[-0.12em]" : ""}`}
-      >
-        {char}
-      </span>
-    );
-  });
-};
-
 export const Services = () => {
   const { t } = useLanguage();
 
@@ -37,26 +21,26 @@ export const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden">
+          <Card className="flex flex-col border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden">
             <div className="h-2 bg-gradient-to-r from-primary to-primary/70" />
             <CardHeader className="pb-4">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="text-3xl mb-2">
-                <span className="block tracking-[0.15em]">{t.services.yogaTitle1}</span>
-                <span className="block tracking-[0.15em]">{renderSpacedWord(t.services.yogaTitle2)}</span>
+                <span className="block tracking-[0.03em]">{t.services.yogaTitle1}</span>
+                <span className="block">{t.services.yogaTitle2}</span>
               </CardTitle>
               <CardDescription className="text-lg">
                 {t.services.yogaDesc}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-muted-foreground leading-relaxed text-base">
+            <CardContent className="flex flex-1 flex-col">
+              <p className="mb-6 text-muted-foreground leading-relaxed text-base">
                 {t.services.yogaBody}
               </p>
 
-              <div className="space-y-3">
+              <div className="mb-6 space-y-3">
                 <div className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <span className="text-sm">{t.services.yogaFeat1}</span>
@@ -71,11 +55,13 @@ export const Services = () => {
                 </div>
               </div>
 
-              <div className="pt-4 border-t">
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-primary">€65</span>
-                  <span className="text-muted-foreground">{t.services.perHour}</span>
-                  <span className="ml-auto text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
+              <div className="mt-auto pt-4 border-t">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl font-bold text-primary">€65</span>
+                    <span className="text-muted-foreground">{t.services.perHour}</span>
+                  </div>
+                  <span className="flex-shrink-0 whitespace-nowrap text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
                     {t.services.firstFree}
                   </span>
                 </div>
@@ -91,26 +77,26 @@ export const Services = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden">
+          <Card className="flex flex-col border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden">
             <div className="h-2 bg-gradient-to-r from-secondary to-secondary/70" />
             <CardHeader className="pb-4">
               <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-4">
                 <Sparkles className="h-8 w-8 text-secondary" />
               </div>
               <CardTitle className="text-3xl mb-2">
-                <span className="block tracking-[0.15em]">{t.services.meditationTitle1}</span>
-                <span className="block tracking-[0.15em]">{t.services.meditationTitle2}</span>
+                <span className="block tracking-[0.03em]">{t.services.meditationTitle1}</span>
+                <span className="block tracking-[0.03em]">{t.services.meditationTitle2}</span>
               </CardTitle>
               <CardDescription className="text-lg">
                 {t.services.meditationDesc}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-muted-foreground leading-relaxed text-base">
+            <CardContent className="flex flex-1 flex-col">
+              <p className="mb-6 text-muted-foreground leading-relaxed text-base">
                 {t.services.meditationBody}
               </p>
 
-              <div className="space-y-3">
+              <div className="mb-6 space-y-3">
                 <div className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
                   <span className="text-sm">{t.services.meditationFeat1}</span>
@@ -125,11 +111,13 @@ export const Services = () => {
                 </div>
               </div>
 
-              <div className="pt-4 border-t">
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-secondary">€45</span>
-                  <span className="text-muted-foreground">{t.services.perHour}</span>
-                  <span className="ml-auto text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
+              <div className="mt-auto pt-4 border-t">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl font-bold text-secondary">€45</span>
+                    <span className="text-muted-foreground">{t.services.perHour}</span>
+                  </div>
+                  <span className="flex-shrink-0 whitespace-nowrap text-sm bg-secondary/10 text-secondary px-3 py-1 rounded-full font-semibold">
                     {t.services.firstFree}
                   </span>
                 </div>
@@ -175,7 +163,7 @@ export const Services = () => {
         </div>
 
         <div className="text-center mt-16 px-4">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground tracking-[0.1em] leading-snug max-w-3xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-snug max-w-3xl mx-auto">
             {t.services.footnote}
           </h3>
           <h4 className="text-lg font-normal text-foreground whitespace-pre-line mt-2 max-w-3xl mx-auto" style={{ fontFamily: "Montserrat, sans-serif" }}>

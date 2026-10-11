@@ -3,7 +3,7 @@ export const siteImages = {
     logo: "/images/brand/VINIYOGA_lavendergreen.svg",
   },
   hero: {
-    main: "/images/hero/ina-hero.jpg",
+    main: "/images/hero/ina-hero-optimized.jpg",
   },
   about: {
     namaste: "/images/about/panorama-face-smooth.jpg",

@@ -33,7 +33,7 @@ export const Contact = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 whitespace-pre-line">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-[1.25] md:leading-[1.25] whitespace-pre-line">
               {t.contact.heading}
             </h2>
             <p className="text-xl opacity-90">

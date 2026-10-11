@@ -31,24 +31,13 @@ export const Navigation = () => {
               alt={`${t.brandName} logo`}
               className="block h-10 w-auto flex-shrink-0 md:hidden"
             />
-            <span className="font-display text-lg sm:text-xl text-foreground uppercase tracking-[0.22em] leading-tight">
-              {(() => {
-                const parts = t.brandName.split(" ");
-                const first = parts[0];
-                const rest = parts.slice(1).join("\u00A0"); // non-breaking spaces keep "with Ina" together
-                return (
-                  <>
-                    {first}{" "}
-                    <wbr />
-                    <span className="whitespace-nowrap tracking-[0.22em]">{rest}</span>
-                  </>
-                );
-              })()}
+            <span className="font-display text-xl sm:text-2xl text-foreground tracking-[5px] leading-tight">
+              {t.brandName}
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -67,7 +56,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -77,7 +66,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
