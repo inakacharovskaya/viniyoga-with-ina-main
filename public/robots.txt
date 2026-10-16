@@ -1,14 +1,11 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Allow all standard search engine crawlers to index public pages
 User-agent: *
 Allow: /
+
+# Block technical directories, backend routes, or admin areas from being crawled
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Link to your XML sitemap so Google can find all your pages instantly
+Sitemap: https://viniyoga-with-ina.de/sitemap.xml
