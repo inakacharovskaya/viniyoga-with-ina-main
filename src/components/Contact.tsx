@@ -13,19 +13,48 @@ const fieldClassName = "bg-white/10 border-white/20 text-white placeholder:text-
 export const Contact = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: t.contact.sentTitle,
-      description: t.contact.sentDesc,
-    });
-    setFormData({ name: "", email: "", message: "" });
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/a.kacharovskaya@gmail.com", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(event.currentTarget),
+      });
+
+      if (!response.ok) {
+        throw new Error("Contact form submission failed");
+      }
+
+      toast({
+        title: "Your message has been sent!",
+        description: (
+          <>
+            Thank you for your interest.
+            <br />
+            I will get back to you soon.
+          </>
+        ),
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch {
+      toast({
+        title: "Unable to send your message",
+        description: "Please try again in a moment.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -43,9 +72,15 @@ export const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="_subject" value="potential client ALERT" />
+                <input type="hidden" name="_template" value="table" />
                 <div>
                   <Input
+                    name="name"
                     placeholder={t.contact.namePh}
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -56,6 +91,7 @@ export const Contact = () => {
                 <div>
                   <Input
                     type="email"
+                    name="email"
                     placeholder={t.contact.emailPh}
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -65,6 +101,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <Textarea
+                    name="message"
                     placeholder={t.contact.messagePh}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -76,6 +113,7 @@ export const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-full py-6"
                 >
                   {t.contact.send}

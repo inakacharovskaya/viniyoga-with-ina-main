@@ -72,7 +72,7 @@ const Impressum = () => {
               </section>
 
               <section className="space-y-6 text-center">
-                <h2 className="text-xl md:text-2xl text-foreground">{isGerman ? "Zertifikate" : "Certificates"}</h2>
+                <h2 className="text-xl md:text-2xl text-foreground">{isGerman ? "Yoga Therapie Zertifikat" : "Yoga Therapy Certificate"}</h2>
                 <img
                   src="/images/certificates/Alina_IAYT800.jpg"
                   alt={isGerman ? "IAYT-Zertifikat von Alina Kacharovskaya" : "IAYT certificate of Alina Kacharovskaya"}
