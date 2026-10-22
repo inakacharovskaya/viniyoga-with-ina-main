@@ -17,22 +17,18 @@ export const About = () => {
     {
       image: rys200,
       alt: "RYS 200 Registered Yoga School",
-      href: "https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/1525669833/treasury?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0",
     },
     {
       image: rys300,
       alt: "RYS 300 Yoga Alliance Certification",
-      href: "https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/1525766666/treasury?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0",
     },
     {
       image: eRyt500,
       alt: "E-RYT 500 Yoga Alliance Certification",
-      href: "https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/131874144/treasury/?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0",
     },
     {
       image: yacep,
       alt: "YACEP Yoga Alliance Continuing Education Provider",
-      href: "https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/131874144/treasury/?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0",
     },
   ];
 
@@ -133,19 +129,11 @@ export const About = () => {
                      index === 0 ? 'w-28 h-28' : index === 1 ? 'w-32 h-32' : 'w-28 h-28'
                    }`}
                  >
-                   <a
-                     href={cert.href}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     aria-label={cert.alt}
-                     className="block w-full h-full"
-                   >
-                     <img
-                       src={cert.image}
-                       alt={cert.alt}
-                       className="w-full h-full object-cover"
-                     />
-                   </a>
+                   <img
+                     src={cert.image}
+                     alt={cert.alt}
+                     className="w-full h-full object-cover"
+                   />
                  </div>
                ))}
              </div>
@@ -154,28 +142,16 @@ export const About = () => {
                   {t.about.accreditedBy}
                 </h3>
                 <div className="flex flex-wrap items-center justify-center gap-8">
-                   <a
-                     href="https://www.linkedin.com/in/alinakacharovskaya/overlay/Certifications/1522203868/treasury/?profileId=ACoAADx6ZdsBnpHplaDD8co_ggZCzjdevHoa6w0"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                   >
-                     <img
-                       src={iayt}
-                       alt="IAYT Accredited Yoga Therapy Training Program"
-                       className="w-64 h-auto object-contain"
-                     />
-                   </a>
-                   <a
-                     href="https://yogatherapygreece.com/our-cvs/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                   >
-                     <img
-                       src={yogaTherapyGreece}
-                       alt="Yoga Therapy Greece"
-                       className="w-32 h-auto object-contain"
-                     />
-                   </a>
+                   <img
+                     src={iayt}
+                     alt="IAYT Accredited Yoga Therapy Training Program"
+                     className="w-64 h-auto object-contain"
+                   />
+                   <img
+                     src={yogaTherapyGreece}
+                     alt="Yoga Therapy Greece"
+                     className="w-32 h-auto object-contain"
+                   />
                 </div>
               </div>
           </div>
