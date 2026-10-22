@@ -1,18 +1,19 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { localizedPath } from "@/lib/routing";
 
 export const Footer = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   return (
     <footer className="bg-foreground text-background py-8">
       <div className="container px-4 mx-auto text-center">
         <div className="flex flex-wrap items-center justify-center gap-4 text-sm opacity-80 mb-3">
-          <Link to="/impressum" className="hover:opacity-100 transition-opacity">
+          <Link to={localizedPath("/impressum", lang)} className="hover:opacity-100 transition-opacity">
             {t.footer.legalNotice}
           </Link>
           <span aria-hidden="true">•</span>
-          <Link to="/datenschutz" className="hover:opacity-100 transition-opacity">
+          <Link to={localizedPath("/datenschutz", lang)} className="hover:opacity-100 transition-opacity">
             {t.footer.privacyPolicy}
           </Link>
         </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const STORAGE_KEY = "viniyoga-cookie-consent";
 type ConsentChoice = "all" | "essential";
@@ -35,6 +36,7 @@ const applyConsent = (choice: ConsentChoice) => {
 };
 
 export const CookieConsentBanner = () => {
+  const { lang } = useLanguage();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -58,16 +60,34 @@ export const CookieConsentBanner = () => {
     return null;
   }
 
+  const copy = lang === "de"
+    ? {
+        title: "Cookie-Einstellungen",
+        firstSentence: "Wir verwenden Cookies, um dein Nutzungserlebnis zu verbessern.",
+        secondSentence: "Du kannst alle Cookies akzeptieren oder nur notwendige Cookies zulassen.",
+        essentialOnly: "Nur notwendige",
+        acceptAll: "Alle akzeptieren",
+      }
+    : {
+        title: "Cookie Preferences",
+        firstSentence: "We use cookies to improve your experience.",
+        secondSentence: "You can accept all cookies or keep only essential ones enabled.",
+        essentialOnly: "Essential Only",
+        acceptAll: "Accept All",
+      };
+
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 px-4 pb-4">
       <div className="mx-auto max-w-5xl rounded-2xl border border-border/60 bg-background/80 backdrop-blur-md shadow-lg md:p-6 p-4">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold tracking-[0.12em] text-foreground">
-              Cookie Preferences
+              {copy.title}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              We use cookies to improve your experience. You can accept all cookies or keep only essential ones enabled.
+              {copy.firstSentence}
+              <br />
+              {copy.secondSentence}
             </p>
           </div>
 
@@ -77,14 +97,14 @@ export const CookieConsentBanner = () => {
               onClick={() => handleChoice("essential")}
               className="rounded-full border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-accent"
             >
-              Essential Only
+              {copy.essentialOnly}
             </button>
             <button
               type="button"
               onClick={() => handleChoice("all")}
               className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
             >
-              Accept All
+              {copy.acceptAll}
             </button>
           </div>
         </div>

@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { siteImages } from "@/lib/assets";
+import { localizedPath } from "@/lib/routing";
 
 const heroImage = siteImages.hero.main;
 const BOOKING_URL = "https://calendar.app.google/Ng7vmb3euhFMuxcc9";
 
 export const Hero = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   return (
     <section className="relative overflow-hidden">
@@ -39,7 +40,7 @@ export const Hero = () => {
               asChild
               className="h-[52px] min-w-0 flex-1 whitespace-nowrap border-2 border-secondary bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-[11px] min-[380px]:text-xs sm:text-sm md:flex-none md:text-base px-1.5 min-[380px]:px-2 sm:px-4 md:px-8 py-6 rounded-full shadow-lg"
             >
-              <Link to="/services">{t.hero.explore}</Link>
+              <Link to={localizedPath("/services", lang)}>{t.hero.explore}</Link>
             </Button>
             <Button 
               size="lg" 
@@ -86,7 +87,7 @@ export const Hero = () => {
                 asChild
                 className="h-[52px] border-2 border-secondary bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-lg px-8 py-6 rounded-full shadow-lg"
               >
-                <Link to="/services">{t.hero.explore}</Link>
+                <Link to={localizedPath("/services", lang)}>{t.hero.explore}</Link>
               </Button>
               <Button 
                 size="lg" 

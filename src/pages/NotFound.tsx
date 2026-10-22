@@ -1,8 +1,11 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { localizedPath } from "@/lib/routing";
 
 const NotFound = () => {
   const location = useLocation();
+  const { lang } = useLanguage();
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
@@ -13,9 +16,9 @@ const NotFound = () => {
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
+        <Link to={localizedPath("/", lang)} className="text-blue-500 underline hover:text-blue-700">
           Return to Home
-        </a>
+        </Link>
       </div>
     </div>
   );

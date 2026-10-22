@@ -1,6 +1,6 @@
 export const siteImages = {
   brand: {
-    logo: "/images/brand/VINIYOGA_lavendergreen.svg",
+    logo: "/images/brand/VINIYOGA_lavendergreen.png",
   },
   hero: {
     main: "/images/hero/ina-hero-optimized.jpg",

@@ -7,27 +7,28 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Heart, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { localizedPath } from "@/lib/routing";
 
 const Index = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const sections = [
     {
       title: t.index.servicesTitle,
       description: t.index.servicesDesc,
       icon: Brain,
-      to: "/services",
+      to: localizedPath("/services", lang),
     },
     {
       title: t.index.aboutTitle,
       description: t.index.aboutDesc,
       icon: Heart,
-      to: "/about",
+      to: localizedPath("/about", lang),
     },
     {
       title: t.index.contactTitle,
       description: t.index.contactDesc,
       icon: MessageCircle,
-      to: "/contact",
+      to: localizedPath("/contact", lang),
     },
   ];
 

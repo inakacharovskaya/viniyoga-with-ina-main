@@ -13,6 +13,8 @@ const LanguageContext = createContext<Ctx | undefined>(undefined);
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [lang, setLangState] = useState<Lang>(() => {
     if (typeof window === "undefined") return "en";
+    const pathLanguage = window.location.pathname.split("/")[1];
+    if (pathLanguage === "en" || pathLanguage === "de") return pathLanguage;
     const stored = window.localStorage.getItem("lang");
     if (stored === "en" || stored === "de") return stored;
     const nav = window.navigator.language?.toLowerCase() ?? "";

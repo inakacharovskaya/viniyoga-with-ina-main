@@ -120,7 +120,7 @@ export const Contact = () => {
                 </Button>
               </form>
               <div className="flex justify-center mt-6">
-                <img src={brandLogo} alt={`${t.brandName} logo`} className="h-60 w-auto opacity-80" />
+                <img src={brandLogo} alt={`${t.brandName} logo`} className="h-60 w-auto" />
               </div>
             </div>
 

@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { siteImages } from "@/lib/assets";
+import { localizedPath } from "@/lib/routing";
 
 const brandLogo = siteImages.brand.logo;
 const navLinkClassName = "text-muted-foreground hover:text-foreground transition-colors tracking-[0.1em] text-sm font-semibold";
@@ -11,20 +12,20 @@ const bookButtonClassName = "uppercase tracking-[0.1em]";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   const navLinks = [
-    { to: "/", label: t.nav.home },
-    { to: "/services", label: t.nav.services },
-    { to: "/about", label: t.nav.about },
-    { to: "/contact", label: t.nav.contact },
+    { to: localizedPath("/", lang), label: t.nav.home },
+    { to: localizedPath("/services", lang), label: t.nav.services },
+    { to: localizedPath("/about", lang), label: t.nav.about },
+    { to: localizedPath("/contact", lang), label: t.nav.contact },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-3 min-w-0">
+          <Link to={localizedPath("/", lang)} className="flex items-center gap-3 min-w-0">
             <img src={brandLogo} alt={`${t.brandName} logo`} className="hidden h-10 w-auto flex-shrink-0 md:block" />
             <img
               src={brandLogo}
