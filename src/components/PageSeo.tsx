@@ -6,9 +6,9 @@ import { getInternalPath, localizedPath } from "@/lib/routing";
 const pageMetadata = {
   en: {
     "/": {
-      title: "Yoga Therapy & Mindful Movement | Viniyoga with Ina",
+      title: "Viniyoga with Ina",
       description:
-        "Personalized yoga therapy, meditation, and mindful movement with Ina in Greven, Münster, and online.",
+        "Personalised yoga therapy and meditation practice with Ina in Münster",
     },
     "/services": {
       title: "Yoga Therapy for Stress & Chronic Illness | Viniyoga with Ina",
@@ -23,9 +23,9 @@ const pageMetadata = {
   },
   de: {
     "/": {
-      title: "Yogatherapie & Achtsamkeit | Viniyoga mit Ina",
+      title: "Viniyoga mit Ina",
       description:
-        "Individuelle Yogatherapie, Meditation und achtsame Bewegung mit Ina in Greven, Münster und online.",
+        "Personalisierte Yogatherapie und Meditationspraxis mit Ina in Münster",
     },
     "/services": {
       title: "Yogatherapie bei Erschöpfung & Stress | Viniyoga mit Ina",
@@ -64,7 +64,25 @@ export const PageSeo = () => {
     );
     openGraphDescription?.setAttribute("content", metadata.description);
 
-    const canonicalUrl = `https://viniyoga-with-ina.de${localizedPath(pagePath, currentLanguage)}`;
+    const socialUrl =
+      pagePath === "/"
+        ? currentLanguage === "de"
+          ? "https://viniyoga-with-ina.de/de"
+          : "https://viniyoga-with-ina.de/"
+        : `https://viniyoga-with-ina.de${localizedPath(pagePath, currentLanguage)}`;
+    const socialImage = "https://viniyoga-with-ina.de/images/hero/ina-hero-optimized.jpg";
+    document.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute("content", socialUrl);
+    document.querySelector<HTMLMetaElement>('meta[property="og:image"]')?.setAttribute("content", socialImage);
+    document.querySelector<HTMLMetaElement>('meta[property="og:locale"]')?.setAttribute(
+      "content",
+      currentLanguage === "de" ? "de_DE" : "en_GB",
+    );
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:title"]')?.setAttribute("content", metadata.title);
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:description"]')?.setAttribute("content", metadata.description);
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:url"]')?.setAttribute("content", socialUrl);
+    document.querySelector<HTMLMetaElement>('meta[name="twitter:image"]')?.setAttribute("content", socialImage);
+
+    const canonicalUrl = socialUrl;
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
